@@ -1,5 +1,15 @@
+ .vert-center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+ #pageheader {
+            background: url('img/balloon-1.jpg') no-repeat center;
+            background-size: cover;
+            display: table;
+        }
+
 .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-      width: 70%;
+      width: 100%;
       margin: auto;
   }
