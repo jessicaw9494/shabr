@@ -1,6 +1,11 @@
+.carousel-content {
+    color:black;
+    display:flex;
+    align-items:center;
+}
 
-.carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-  }
+#text-carousel {
+  width: 100%;
+  height: auto;
+  padding: 50px;
+}
