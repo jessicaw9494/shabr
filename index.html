@@ -25,6 +25,19 @@
                 "hasModal": true
             });
         });
+        $(document).ready(function(){
+   $('li img').on('click',function(){
+        var src = $(this).attr('src');
+        var img = '<img src="' + src + '" class="img-responsive"/>';
+        $('#myModal').modal();
+        $('#myModal').on('shown.bs.modal', function(){
+            $('#myModal .modal-body').html(img);
+        });
+        $('#myModal').on('hidden.bs.modal', function(){
+            $('#myModal .modal-body').html('');
+        });
+   });
+})
     </script>
 </head>
 
@@ -98,18 +111,24 @@
     </div>
 
     <br>
-    <div class="container">
-        <ul class="first">
-            <li>
-                <img src="img/balloon-1.jpg">
-            </li>
-            <li>
-                <img src="img/balloon-2.jpg">
-            </li>
-            <li>
-                <img src="img/balloon-3.jpg">
-            </li>
-        </ul>
+    <div id="page_body">
+
+		<table>
+			<tbody>
+				<tr>
+					<td><img src="img/balloon-1.jpg" alt="" /></td>
+					<td><img src="img/balloon-2.jpg" alt="" /></td>
+					<td><img src="img/balloon-3.jpg" alt="" /></td>
+					<td><img src="img/balloon-4.jpg" alt="" /></td>
+					<td><img src="img/balloon-5.jpg" alt="" /></td>
+					<td><img src="img/balloon-6.jpg" alt="" /></td>
+				</tr>
+			</tbody>
+		</table>
+
+	</div><!-- page body -->
+
+</div><!-- container -->
     </div>
     
     <div class="container-fluid">
