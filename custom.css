@@ -15,7 +15,7 @@ body{ background: #ddd; margin: 0; padding: 0; }
 		table{ border-collapse: collapse; width: 100% }
 		td{ border: 1px solid #eee; padding: 10px; }
 
-		@media screen and (max-width: 480px){
+		@media screen and (max-width: 600px){
 
 			#container{ width: auto; margin: 0; padding: 25px 0; }
 			table { display: block; }
