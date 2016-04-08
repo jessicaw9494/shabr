@@ -18,6 +18,14 @@
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="nav.css">
     <script src="script.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('ul.first').bsPhotoGallery({
+                "classes": "col-lg-2 col-md-4 col-sm-3 col-xs-4 col-xxs-12",
+                "hasModal": true
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -87,7 +95,21 @@
         <a class="right carousel-control" href="#text-carousel" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
+    </div>
 
+    <br>
+    <div class="container">
+        <ul class="first">
+            <li>
+                <img src="img/balloon-1.jpg">
+            </li>
+            <li>
+                <img src="img/balloon-2.jpg">
+            </li>
+            <li>
+                <img src="img/balloon-3.jpg">
+            </li>
+        </ul>
     </div>
 
 </body>
