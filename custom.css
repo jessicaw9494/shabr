@@ -1,7 +1,7 @@
 .carousel-content {
-    color:black;
-    display:flex;
-    align-items:center;
+  color: black;
+  display: flex;
+  align-items: center;
 }
 
 #text-carousel {
@@ -10,18 +10,54 @@
   padding: 50px;
 }
 
-body{ background: #ddd; margin: 0; padding: 0; }
-		#container{ width: 950px; margin: 0 auto; background: #fff; padding: 200px 25px; }
-		table{ border-collapse: collapse; width: 100% }
-		td{ border: 1px solid #eee; padding: 10px; }
+body {
+  background: #ddd;
+  margin: 0;
+  padding: 0;
+}
 
-		@media screen and (max-width: 600px){
+#container {
+  width: 950px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 200px 25px;
+}
 
-			#container{ width: auto; margin: 0; padding: 25px 0; }
-			table { display: block; }
-			td{ display: block; padding: 5px 0; border: none; }
-			td img{ display: block; margin: 0; width: 100%; max-width: none; }
+table {
+  border-collapse: collapse;
+  width: 100%
+}
 
-		}
+td {
+  border: 1px solid #eee;
+  padding: 10px;
+}
 
-		img{ max-width: 100%; height: auto; width: auto\\9; /* ie8 */ }
+@media screen and (max-width: 768px) {
+  #container {
+    width: auto;
+    margin: 0;
+    padding: 25px 0;
+  }
+  table {
+    display: block;
+  }
+  td {
+    display: block;
+    padding: 5px 0;
+    border: none;
+  }
+  td img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: auto\\9;
+  /* ie8 */
+}
